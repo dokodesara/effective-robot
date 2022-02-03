@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lora', serif;
+  }
+  .container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(131, 182, 216);
+    background: radial-gradient(
+      circle,
+      rgba(149, 180, 209, 0.633) 0%,
+      rgba(79, 137, 184, 0.841) 35%,
+      rgb(131, 178, 231) 100%
+    );
+  }
+
+
+  h1 {
+    color: rgb(21, 99, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .currentWeather .col {
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+span{
+    font-size: 1em;
+}
+li:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+  
+  /* --------------- Media Queries --------------- */
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .forecast .card-body {
+      padding: 15px;
+      text-align: left;
+    }
+  
+    .forecast .temp,
+    .forecast .humid,
+    .forecast .wind,
+    .forecast .uv,
+    .forecast .flag {
+      display: inline-block !important;
+    }
+  
+    .currentWeather .col {
+      text-align: left;
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+  }
+  
+  
+  @media (min-width: 992px) {
+    .forecast .card-body .col {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      font-size: 0.7rem;
+    }
+  
+    .form-inline .form-group {
+      margin-left: 0px !important;
+      width: 80%;
+    }
+  
+    .list-group {
+      width: 80%;
+    }
+  }
+
+
+}
